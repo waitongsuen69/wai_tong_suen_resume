@@ -7,6 +7,7 @@ This repository provides a lightweight reStructuredText (reST) setup for maintai
 1. Create a Python virtual environment (optional but recommended).
 2. Install dependencies:
    ```bash
+   python3 -m venv .venv && source .venv/bin/activate  # Windows: .venv\Scripts\activate
    pip install -r requirements.txt
    ```
 3. Edit `resume.rst` with your personal information.

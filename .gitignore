@@ -3,3 +3,10 @@ build/
 
 # Python cache
 __pycache__/
+
+# codex instructions file
+AGENTS.md
+
+# macOS metadata
+.DS_Store
+

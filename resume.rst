@@ -27,7 +27,7 @@ Experience
 ==========
 
 Company Name, City | Month YYYY – Month YYYY
--------------------------------------------
+--------------------------------------------
 
 .. class:: job-title
 
@@ -38,7 +38,7 @@ Company Name, City | Month YYYY – Month YYYY
 - Collaborated with ...
 
 Company Name, City | Month YYYY – Month YYYY
--------------------------------------------
+--------------------------------------------
 
 .. class:: job-title
 
@@ -52,7 +52,7 @@ Education
 =========
 
 University Name — Degree Title (Month YYYY)
-------------------------------------------
+-------------------------------------------
 
 - Major: ...
 - GPA: ...

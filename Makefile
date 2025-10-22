@@ -12,7 +12,7 @@ html: $(HTML_OUTPUT)
 
 $(HTML_OUTPUT): $(RST)
 	mkdir -p $(BUILD_DIR)
-	rst2html5.py $(RST) $(HTML_OUTPUT)
+	rst2html5 $(RST) $(HTML_OUTPUT)
 
 pdf: $(PDF_OUTPUT)
 
