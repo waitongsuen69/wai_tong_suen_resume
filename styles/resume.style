@@ -1,0 +1,61 @@
+{
+  "pageSetup": {
+    "size": "A4",
+    "marginLeft": "1.7cm",
+    "marginRight": "1.7cm",
+    "marginTop": "1.7cm",
+    "marginBottom": "1.7cm"
+  },
+  "styles": {
+    "bodytext": {
+      "fontName": "Helvetica",
+      "fontSize": 10.5,
+      "leading": 13
+    },
+    "title": {
+      "fontName": "Helvetica-Bold",
+      "fontSize": 24,
+      "alignment": "center",
+      "spaceAfter": 12
+    },
+    "contact": {
+      "fontName": "Helvetica",
+      "fontSize": 10.5,
+      "alignment": "center",
+      "spaceAfter": 14
+    },
+    "section": {
+      "fontName": "Helvetica-Bold",
+      "fontSize": 14,
+      "spaceBefore": 16,
+      "spaceAfter": 6
+    },
+    "job-title": {
+      "fontName": "Helvetica-Oblique",
+      "fontSize": 11,
+      "spaceAfter": 4
+    },
+    "bullet-list": {
+      "leftIndent": 10,
+      "bulletFontName": "Helvetica-Bold",
+      "bulletFontSize": 9.5
+    },
+    "hyperlink": {
+      "textColor": "#0b5394"
+    }
+  },
+  "pageTemplates": {
+    "main": {
+      "frames": [
+        {
+          "id": "body",
+          "x1": "1.7cm",
+          "y1": "1.7cm",
+          "width": "18.6cm",
+          "height": "25.3cm"
+        }
+      ]
+    }
+  },
+  "defaultPageTemplate": "main"
+}
