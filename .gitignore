@@ -10,3 +10,6 @@ AGENTS.md
 # macOS metadata
 .DS_Store
 
+# Need to remove in the future
+*.pdf
+CLAUDE.md
