@@ -31,11 +31,9 @@ jobs:
     - name: Build PDF
       run: make pdf
 
-    - name: Upload artifacts
+    - name: Upload PDF artifact
       uses: actions/upload-artifact@v4
       with:
-        name: resume
-        path: |
-          build/resume.html
-          build/resume.pdf
+        name: resume-pdf
+        path: build/resume.pdf
         retention-days: 90
