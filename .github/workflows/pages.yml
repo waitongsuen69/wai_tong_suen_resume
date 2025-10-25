@@ -33,12 +33,24 @@ jobs:
         pip install -r requirements.txt
 
     - name: Build HTML
-      run: make html
+      run: |
+        make html
+        cp build/resume.html build/index.html
+
+    - name: Build PDF
+      run: make pdf
+
+    - name: Upload PDF artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: resume-pdf
+        path: build/resume.pdf
+        retention-days: 90
 
     - name: Setup Pages
       uses: actions/configure-pages@v4
 
-    - name: Upload artifact
+    - name: Upload Pages artifact
       uses: actions/upload-pages-artifact@v3
       with:
         path: 'build'
