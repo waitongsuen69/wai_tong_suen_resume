@@ -14,7 +14,7 @@ html: $(HTML_OUTPUT)
 $(HTML_OUTPUT): $(RST) $(CSS)
 	mkdir -p $(BUILD_DIR)
 	cp $(CSS) $(BUILD_DIR)/resume.css
-	rst2html5 --stylesheet-path=$(CSS) $(RST) $(HTML_OUTPUT)
+	rst2html5 --embed-stylesheet --stylesheet-path=$(CSS) $(RST) $(HTML_OUTPUT)
 
 pdf: $(PDF_OUTPUT)
 

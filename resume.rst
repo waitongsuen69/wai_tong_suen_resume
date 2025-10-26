@@ -28,25 +28,26 @@ Junior EDA engineer specialising in C++/SystemC virtual platforms for complex So
 KEY SKILLS
 ==========
 
-
-
 .. list-table::
    :widths: 33 33 34
    :header-rows: 0
    :class: borderless
 
-   * - **SystemC & SoC Modeling**
-       - IP behavioural modelling (C++14/SystemC)
-       - Register, bus, and interrupt tracing
-       - SoC hierarchy integration & validation
-     - **Build & Tooling**
-       - CMake toolchain ownership
-       - SCons pipeline maintenance
-       - Linux/WSL & Docker environments
-     - **Automation & Telemetry**
-       - Simulation logging & metrics
-       - API integration & observability
-       - Documentation upgrades & release prep
+   * - **C++14**
+     - **CMake**
+     - **Register-level modelling**
+   * - **Python**
+     - **SCons**
+     - **Prompt engineering**
+   * - **JavaScript**
+     - **Docker**
+     - **System-prompt management**
+   * - **Go**
+     - **Git**
+     - **RST and Sphinx documentation**
+   * - **SystemC**
+     - **pytest**
+     - **Algorithmic trading**
 
 -----------
 
@@ -56,18 +57,26 @@ PROFESSIONAL EXPERIENCE
 Cadence Design Systems
 ----------------------
 
-**T1 Software Engineer** *(Mar 2023 – Present)*
+**T1 Software Engineer** *(Jun 2025 – Present)*
 
-Deliver C++/SystemC behavioural models for IP blocks and integrate them into hierarchical SoC platforms for early software development and hardware validation. Validate register/bus interactions, interrupts, and memory maps to ensure signal-level correctness. Maintain and modernise build environments (CMake/SCons on Linux/WSL, Docker when required), partnering with global teams to improve model accuracy, documentation clarity, and simulation performance.
+Integrating hierarchical SoC platforms for early software development and hardware validation. Validate register/bus interactions, interrupts, and memory maps to ensure signal-level correctness. Maintain and modernise build environments (CMake/SCons on Linux/WSL, Docker when required), partnering with global teams to improve model accuracy, documentation clarity, and simulation performance.
 
 Accomplishments:
 
 - Coordinated the ARM Toolbox 4.0.0 release, aligning module updates across 15+ IP components, ensuring GCC 13 and Clang 16 compiler compatibility, and delivering comprehensive documentation updates on schedule.
-- Developed and integrated 8+ SystemC IP models (timers, DMA controllers, interrupt controllers) that passed validation against hardware specifications, enabling software teams to begin driver development 6 months before silicon availability.
+- Developed and integrated 8+ SystemC IP models (timers, DMA controllers, interrupt controllers) that passed validation against hardware specifications.
 - Debugged and resolved 20+ register-level and bus protocol issues by tracing TLM transactions, analyzing waveforms, and collaborating with architecture teams to clarify specification ambiguities.
 - Modernized CMake build infrastructure for cross-platform compatibility (Linux/WSL2), reducing build time by 30% and eliminating 12 Windows-specific build failures through improved dependency management.
 - Created automated regression test suites using Python and SCons, increasing test coverage from 60% to 85% and catching integration issues before release.
-- Documented IP model APIs and integration procedures, producing 100+ pages of technical documentation that reduced new team member onboarding time from 3 weeks to 1 week.
+- Documented IP model APIs and integration procedures, updating 100+ pages of technical documentation that reduced new team member onboarding time from 3 weeks to 1 week.
+
+Australian Semiconductor Technology Company
+-------------------------------------------
+
+**Graduate Software Engineer** *(Mar 2023 – Jun 2025)*
+
+Deliver C++/SystemC behavioural models for IP blocks
+
 
 ----
 
