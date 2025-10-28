@@ -1,4 +1,4 @@
-# Wai Tong Suen — Resume Framework
+# Wai Tong Suen — Resume 
 
 This repository provides a lightweight reStructuredText (reST) setup for maintaining your resume in plain text while exporting to HTML and PDF.
 
@@ -23,10 +23,3 @@ This repository provides a lightweight reStructuredText (reST) setup for maintai
 - `styles/resume.style` — `rst2pdf` style configuration that controls layout, fonts, and spacing for the PDF export.
 - `Makefile` — Handy shortcuts for building HTML and PDF outputs into the `build/` directory.
 - `requirements.txt` — Python packages required for generation (`docutils` and `rst2pdf`).
-
-## Tips
-
-- Use reST lists (`-`, `*`, `#.`, etc.) for experience bullet points and keep sentences punchy.
-- Duplicate headline blocks when you add experience, projects, or education items.
-- Adjust the PDF style (margins, fonts, colors) by editing `styles/resume.style` and rebuilding with `make pdf`.
-- Consider versioning your resume updates with Git commits or tags for each job application cycle.

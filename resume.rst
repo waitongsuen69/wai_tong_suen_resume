@@ -59,33 +59,52 @@ Cadence Design Systems
 
 **T1 Software Engineer** *(Jun 2025 – Present)*
 
-Integrating hierarchical SoC platforms for early software development and hardware validation. Validate register/bus interactions, interrupts, and memory maps to ensure signal-level correctness. Maintain and modernise build environments (CMake/SCons on Linux/WSL, Docker when required), partnering with global teams to improve model accuracy, documentation clarity, and simulation performance.
+Contributing to confidential projects involving virtual platform modeling and system-level simulation for next-generation SoCs. Focused on SystemC/C++ model development, infrastructure modernization, and multi-architecture integration, delivering production-ready simulation components under strict NDA guidelines.
 
 Accomplishments:
 
-- Coordinated the ARM Toolbox 4.0.0 release, aligning module updates across 15+ IP components, ensuring GCC 13 and Clang 16 compiler compatibility, and delivering comprehensive documentation updates on schedule.
-- Developed and integrated 8+ SystemC IP models (timers, DMA controllers, interrupt controllers) that passed validation against hardware specifications.
-- Debugged and resolved 20+ register-level and bus protocol issues by tracing TLM transactions, analyzing waveforms, and collaborating with architecture teams to clarify specification ambiguities.
-- Modernized CMake build infrastructure for cross-platform compatibility (Linux/WSL2), reducing build time by 30% and eliminating 12 Windows-specific build failures through improved dependency management.
-- Created automated regression test suites using Python and SCons, increasing test coverage from 60% to 85% and catching integration issues before release.
-- Documented IP model APIs and integration procedures, updating 100+ pages of technical documentation that reduced new team member onboarding time from 3 weeks to 1 week.
+- Designed and integrated SystemC-based IP and interconnect models for complex SoC platforms across automotive and embedded domains.
+- Enhanced simulation infrastructure by upgrading internal modeling frameworks and improving compatibility with modern compiler and verification environments.
+- Led multi-core synchronization and code cleanup efforts to improve performance consistency, determinism, and maintainability.
+- Automated build, validation, and deployment workflows within CI/CD environments to ensure consistent multi-platform releases.
+- Migrated and standardized legacy modeling repositories to new version-control and dependency-management systems.
+- Authored technical documentation and architecture diagrams for internal model reference and knowledge transfer.
+- Collaborated cross-functionally with hardware modeling, verification, and EDA tool teams to enhance simulation fidelity and modeling reuse.
+- Operated under strict NDA constraints, ensuring all deliverables adhered to Cadence's IP protection and data confidentiality standards.
+
+
+AKC Code Next
+--------------
+
+**Full-Stack Engineer (Freelance)** *(July 2025 – Present)*
+
+Led end-to-end development of a usage-limits & subscription control platform, owning backend APIs, data modeling, and the admin front-end. Built reliable request validation and guardrails for numeric/edge cases, simplified complex group/plan policies into clear, testable logic, and aligned the API–UI contract to accelerate team delivery. Drove collaboration hygiene (ticket scoping, branch strategy, PR flow) to reduce merge conflicts and make changes safer to ship. Operated across design, implementation, testing, and deployment readiness with pragmatic documentation for teammates.
+
+Accomplishments:
+
+- Designed and shipped REST APIs in Go (Gin): Built endpoints for subscription groups, usage-limit rules, and user-group access with consistent request/response schemas and error semantics.
+- Hardened validation & safety: Implemented strict JSON binding and custom validators; added guardrails for numeric overflows (e.g., int64 boundaries) and type mismatches to cut malformed-request failures.
+- Modeled data for clarity & performance: Structured MySQL schemas for subscriptions/limits/user groups; tuned indexes/queries for predictable latency and easy reasoning.
+- Encoded business policies cleanly: Implemented windowed counters, enforcement paths, and safe defaults with edge-case handling (limits, groups, and exceptions).
+- Built the admin front-end (SPA): Implemented forms, lists, filtering, pagination, and client-side validation; integrated with new APIs and stabilized the API-UI contract.
 
 Australian Semiconductor Technology Company
 -------------------------------------------
 
 **Graduate Software Engineer** *(Mar 2023 – Jun 2025)*
 
-Deliver C++/SystemC behavioural models for IP blocks
+Contributed to the design, integration, and validation of virtual hardware models within a proprietary SystemC-based simulation platform. Worked across multiple SoC architectures to ensure accurate functional behavior, register-level fidelity, and compatibility with evolving internal toolchains.
 
+Accomplishments:
 
-----
-
-EDUCATION
-=========
-
-**University of Adelaide, Bachelor of Computer Science** *(2020 – 2023)*
-
-*Coursework across embedded systems, computer architecture, and software engineering.*
+- Integrated and verified over one hundred reusable IP and subsystem models (communication, memory, security, and timing modules) within the company's virtual platform environment.
+- Developed register-accurate behavioral models and implemented functional enhancements improving simulation stability and performance.
+- Migrated legacy model repositories to a modern Git-based infrastructure, standardizing dependency management and build configuration.
+- Upgraded internal models to align with the latest register-framework standards, including code-coverage validation and regression testing.
+- Implemented numerous enhancement and maintenance tasks addressing model correctness, coverage gaps, and backward-compatibility issues.
+- Supported cross-platform toolchain integration for Linux and Windows builds, resolving compiler and environment inconsistencies.
+- Collaborated with senior modeling engineers to refactor deprecated APIs, improve framework reusability, and document modeling conventions.
+- Contributed to internal documentation and process automation, accelerating integration turnaround for new IP deliverables.
 
 ----
 
@@ -107,21 +126,6 @@ Accomplishments:
 - Achieved ~7% monthly profit during the 3-month active trading period through automated arbitrage detection and execution.
 - Tech: JavaScript (Node.js ESM), WebSocket, REST API, HMAC-SHA256, Telegram Bot API.
 
-Claude Relay Service (Extended Fork)
--------------------------------------
-
-**Open Source Contribution** *(Aug 2025 – Present)*
-
-Enhanced an LLM relay gateway with comprehensive prompt telemetry, stream reconstruction capabilities, and security redaction safeguards to improve observability and compliance for enterprise AI deployments.
-
-Accomplishments:
-
-- Implemented correlation-based logging system that tracks request-response pairs across distributed sessions, improving debugging efficiency by 60%.
-- Developed stream reconstruction middleware for Server-Sent Events, enabling complete session replay and audit trail generation.
-- Added configurable redaction safeguards for PII and sensitive data, ensuring compliance with data protection regulations.
-- Improved error handling and recovery mechanisms, reducing service downtime from 2% to 0.3% through better exception management.
-- Tech: TypeScript, Node.js, Express, Server-Sent Events, REST API, logging/security instrumentation.
-
 HTX_on_PI — Local-First Balance Dashboard
 ------------------------------------------
 
@@ -137,4 +141,57 @@ Accomplishments:
 - Deployed on Raspberry Pi 4 with automated startup and health monitoring, achieving 99.5% uptime over 3 months.
 - Planning Flutter rewrite to extend support to mobile and desktop platforms with native performance.
 - Tech: JavaScript, Node.js, HTML/CSS, REST APIs, PWA (manifest/service worker), Raspberry Pi/Linux.
+
+----
+
+EDUCATION
+=========
+
+**University of Adelaide, Bachelor of Computer Science** *(2020 – 2023)*
+
+GPA 5.5
+
+----
+
+LANGUAGE
+========
+
+.. list-table::
+   :widths: 33 33 34
+   :header-rows: 0
+   :class: borderless
+
+   * - **English**
+
+       Proficient
+     - **Mandarin**
+
+       Native
+     - **Cantonese**
+
+       Native proficiency
+ 
+  
+----
+
+REFERENCES
+==========
+
+.. list-table::
+   :widths: 50 50
+   :header-rows: 0
+   :class: borderless
+
+   * - **Matthew Davey**
+
+       Software Engineer Director / Cadence
+
+       **Email:** Available on Request
+
+     - **Akide Liu**
+
+       Founder / AKC Code Next
+
+       **Email:** Available on Request
+
 
