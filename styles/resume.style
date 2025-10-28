@@ -87,6 +87,18 @@
         ["INNERGRID", [0, 0], [-1, -1], 0, "white"]
       ]
     },
+    "job-header-table": {
+      "parent": "list-table",
+      "spaceAfter": 6,
+      "spaceBefore": 0,
+      "commands": [
+        ["GRID", [0, 0], [-1, -1], 0, "white"],
+        ["BOX", [0, 0], [-1, -1], 0, "white"],
+        ["ALIGN", [0, 0], [0, -1], "LEFT"],
+        ["ALIGN", [1, 0], [1, -1], "RIGHT"],
+        ["VALIGN", [0, 0], [-1, -1], "BOTTOM"]
+      ]
+    },
     "hyperlink": {
       "textColor": "#0066cc"
     },

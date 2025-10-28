@@ -102,8 +102,9 @@ ul {
 }
 
 ul li {
-    margin-bottom: 8px;
-    line-height: 1.5;
+    margin-bottom: 4px;
+    line-height: 1;
+    color: #555;
 }
 
 /* Tables (for Key Skills) */
@@ -127,6 +128,29 @@ table.colwidths-given td {
 table.borderless td {
     border: none;
     padding: 1px 10px 1px 0;
+}
+
+/* Job header table for right-aligned dates */
+table.job-header-table {
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+
+table.job-header-table td {
+    border: none;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+table.job-header-table td:first-child {
+    text-align: left;
+}
+
+table.job-header-table td:last-child {
+    text-align: right;
+    font-style: italic;
+    color: #555;
+    white-space: nowrap;
 }
 
 /* Sections */
