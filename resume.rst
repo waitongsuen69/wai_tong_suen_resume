@@ -147,7 +147,7 @@ HSTrader — Crypto Arbitrage Engine
    :header-rows: 0
 
    * - **Independent Project**
-     - *Jan 2025 – Mar 2025*
+     - *Nov 2024 – Mar 2025*
 
 Developed a high-frequency crypto arbitrage engine in Node.js, integrating live market feeds and secure trade execution across multiple centralized exchanges.  
 Focused on low-latency data flow, robust error handling, and risk-aware automation to capture short-lived price discrepancies.
