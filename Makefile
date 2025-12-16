@@ -1,16 +1,21 @@
+PYTHON ?= python3
+BUILD_DIR=build
+RST=resume.rst
+HTML_OUTPUT=$(BUILD_DIR)/resume.html
 PDF_OUTPUT=$(BUILD_DIR)/resume.pdf
 STYLE=styles/resume.style
 CSS=styles/resume.css
 
-
 .PHONY: all html pdf clean
 
-@@ -13,14 +14,13 @@ html: $(HTML_OUTPUT)
+all: html pdf
+
+html: $(HTML_OUTPUT)
 
 $(HTML_OUTPUT): $(RST) $(CSS)
 	mkdir -p $(BUILD_DIR)
 	cp $(CSS) $(BUILD_DIR)/resume.css
-	rst2html5 --embed-stylesheet --stylesheet-path=$(CSS) $(RST) $(HTML_OUTPUT)
+	$(PYTHON) -m docutils --writer=html5 --embed-stylesheet --stylesheet-path=$(CSS) $(RST) $(HTML_OUTPUT)
 
 pdf: $(PDF_OUTPUT)
 

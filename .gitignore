@@ -13,3 +13,4 @@ AGENTS.md
 # Need to remove in the future
 *.pdf
 CLAUDE.md
+.venv
