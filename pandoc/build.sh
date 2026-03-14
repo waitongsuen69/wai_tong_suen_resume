@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-pandoc resume.md -o resume.pdf --pdf-engine=xelatex
+pandoc resume.md -o resume.pdf --pdf-engine=lualatex
 
 # set -euo pipefail
 
