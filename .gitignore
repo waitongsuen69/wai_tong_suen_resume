@@ -1,16 +1,17 @@
-# Build artifacts
+# Generated output
 build/
 
-# Python cache
+# Tool caches
 __pycache__/
 
-# codex instructions file
-AGENTS.md
-
-# macOS metadata
+# Local environments and metadata
+.venv/
 .DS_Store
 
-# Need to remove in the future
-*.pdf
+# Local reference documents
+/Miaos_cv.pdf
+/old_resume.pdf
+
+# Local assistant instructions
+AGENTS.md
 CLAUDE.md
-.venv

@@ -1,25 +1,50 @@
-# Wai Tong Suen — Resume 
+# Wai Tong Suen - Resume
 
-This repository provides a lightweight reStructuredText (reST) setup for maintaining your resume in plain text while exporting to HTML and PDF.
+This repository maintains two resume variants in Markdown and builds them with Pandoc:
 
-## Getting started
+- **Software Engineering** - backend services, APIs, web platforms, and systems software.
+- **Embedded Systems** - C++, SystemC, virtual platforms, simulation, and validation.
 
-1. Create a Python virtual environment (optional but recommended).
-2. Install dependencies:
-   ```bash
-   python3 -m venv .venv && source .venv/bin/activate  # Windows: .venv\Scripts\activate
-   pip install -r requirements.txt
-   ```
-3. Edit `resume.rst` with your personal information.
-4. Build the outputs:
-   ```bash
-   make html    # Generates build/resume.html
-   make pdf     # Generates build/resume.pdf
-   ```
+Both variants share the same A4 PDF styling and responsive HTML presentation.
+
+## Requirements
+
+- [Pandoc](https://pandoc.org/)
+- A TeX distribution containing LuaLaTeX and TeX Gyre fonts, such as TeX Live or MacTeX
+
+On macOS, MacTeX provides the complete PDF toolchain:
+
+```sh
+brew install pandoc
+brew install --cask mactex
+```
+
+## Build
+
+```sh
+make all        # Build the complete website and both PDFs
+make html       # Build index.html and both online resume pages
+make pdf        # Build both A4 PDFs
+make software   # Build only the Software HTML and PDF
+make embedded   # Build only the Embedded HTML and PDF
+make clean      # Remove generated files
+```
+
+Generated files are written to `build/`:
+
+- `index.html`
+- `software.html`
+- `embedded.html`
+- `resume-software.pdf`
+- `resume-embedded.pdf`
 
 ## Project structure
 
-- `resume.rst` — Main resume content written in reStructuredText.
-- `styles/resume.style` — `rst2pdf` style configuration that controls layout, fonts, and spacing for the PDF export.
-- `Makefile` — Handy shortcuts for building HTML and PDF outputs into the `build/` directory.
-- `requirements.txt` — Python packages required for generation (`docutils` and `rst2pdf`).
+- `resumes/` contains the two independently tailored Markdown sources.
+- `metadata.yaml` contains shared contact information.
+- `filters/resume.lua` converts semantic resume entries into format-specific layout.
+- `templates/` contains the PDF and website templates.
+- `styles/resume.css` provides the responsive website styling.
+- `Makefile` is the single build entry point.
+
+Edit resume content in Markdown. Use `.resume-entry` fenced divs for experience and education headers so the shared filter can render them consistently in HTML and PDF.

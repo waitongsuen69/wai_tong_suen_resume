@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="$lang$">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="pandoc">
+  <meta name="description" content="$description$">
+  <link rel="icon" href="data:,">
+  <title>$pagetitle$</title>
+  $for(css)$
+  <link rel="stylesheet" href="$css$">
+  $endfor$
+</head>
+<body class="$if(landing)$landing$else$resume-page$endif$">
+  <main class="page-shell">
+    $if(landing)$
+    <header class="identity landing-identity">
+      <h1>$name$</h1>
+      <p>$location$ <span aria-hidden="true">|</span> <a href="mailto:$email$">$email$</a></p>
+    </header>
+    <article class="landing-content">
+      $body$
+    </article>
+    $else$
+    <nav class="site-nav" aria-label="Resume versions">
+      <a href="index.html">All versions</a>
+      <span class="nav-variants">
+        <a href="software.html">Software</a>
+        <a href="embedded.html">Embedded</a>
+        <a class="button button-primary" href="$pdf-file$">Download $variant$ PDF</a>
+      </span>
+    </nav>
+    <header class="identity">
+      <h1>$name$</h1>
+      <p>
+        $location$ <span aria-hidden="true">|</span>
+        <a href="tel:$phone$">$phone$</a> <span aria-hidden="true">|</span>
+        <a href="mailto:$email$">$email$</a> <span aria-hidden="true">|</span>
+        <a href="$linkedin-url$">$linkedin-label$</a>
+      </p>
+    </header>
+    <article class="resume-content">
+      $body$
+    </article>
+    $endif$
+  </main>
+</body>
+</html>
